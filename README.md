@@ -1,8 +1,11 @@
 # ZMK-LEADER-KEY
 
-This module adds a `leader-key` behavior to ZMK. It is a reimplementation of
-Nick Conway's [PR #1380](https://github.com/zmkfirmware/zmk/pull/1380). The most
-important differences are:
+This module adds leader key functionality to ZMK. When a leader key is pressed, it captures all
+subsequent key presses, checks them against predefined leader sequences, and triggers the
+corresponding behavior if a match is found.
+
+The module is a reimplementation of Nick Conway's [PR
+#1380](https://github.com/zmkfirmware/zmk/pull/1380). The most important differences are:
 
 - Works as a module without the need to patch ZMK.
 - Sequences are `keycode`-based instead of `position`-based.
