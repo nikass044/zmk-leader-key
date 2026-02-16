@@ -281,6 +281,6 @@ static int behavior_leader_key_init(const struct device *dev) { return 0; }
     };                                                                                             \
     BEHAVIOR_DT_INST_DEFINE(n, behavior_leader_key_init, NULL, NULL,                               \
                             &behavior_leader_key_config_##n, POST_KERNEL,                          \
-                            CONFIG_KERNEL_INIT_PRIORITY_DEFAULT, &behavior_leader_key_driver_api);
+                            91, &behavior_leader_key_driver_api);
 
 DT_INST_FOREACH_STATUS_OKAY(LEAD_INST)
